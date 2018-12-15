@@ -24,7 +24,9 @@ public class MyRepositoryImpl<T, ID extends Serializable>
 
     @Override
     public  Object get(ID id) {
-
         return entityManager.find(entityInformation.getJavaType(),id);
     }
+
+
+
 }
