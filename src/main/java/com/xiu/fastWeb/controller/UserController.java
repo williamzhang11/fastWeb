@@ -38,6 +38,12 @@ public class UserController {
 		return userService.getUserList( id);
 		
 	}
+	@GetMapping(value = "test3")
+	@ResponseBody
+	public Object getUser(){
+
+		return userService.get(1L);
+	}
 	
 	
 }

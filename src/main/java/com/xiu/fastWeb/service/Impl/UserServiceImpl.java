@@ -32,13 +32,12 @@ public class UserServiceImpl implements UserService{
 	@Override
 	public List<User> getUserList(String id) {
 		
-		List<User> persons = userDao.getUserList( Long.parseLong(id));
-		return persons;
+		return userDao.getUserList( Long.parseLong(id));
 	}
-	
-	
-	
-	
-	
-	
+
+	@Override
+	public Object get(Long id) {
+
+		return userDao.get(id);
+	}
 }

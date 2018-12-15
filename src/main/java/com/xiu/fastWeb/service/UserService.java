@@ -11,5 +11,7 @@ public interface UserService {
 	public User saveUser();
 	
 	public List<User> getUserList(String id);
+
+	public Object get(Long id);
 	
 }
