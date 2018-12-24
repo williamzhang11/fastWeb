@@ -32,7 +32,7 @@ public class TransactionAdviceConfig {
 
         DefaultTransactionAttribute txAttr_REQUIRED_READONLY = new DefaultTransactionAttribute();
         txAttr_REQUIRED_READONLY.setPropagationBehavior(TransactionDefinition.PROPAGATION_REQUIRED);
-        txAttr_REQUIRED_READONLY.setReadOnly(true);
+        txAttr_REQUIRED_READONLY.setReadOnly(false);
 
         NameMatchTransactionAttributeSource source = new NameMatchTransactionAttributeSource();
         source.addTransactionalMethod("add*", txAttr_REQUIRED);
