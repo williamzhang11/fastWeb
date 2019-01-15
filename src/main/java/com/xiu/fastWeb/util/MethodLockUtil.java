@@ -8,7 +8,7 @@ import org.springframework.transaction.UnexpectedRollbackException;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
-
+//基于数据库分布式锁
 public class MethodLockUtil {
 
     private static Logger log = LoggerFactory.getLogger(MethodLockUtil.class);
