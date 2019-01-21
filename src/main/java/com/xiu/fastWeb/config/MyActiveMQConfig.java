@@ -57,7 +57,9 @@ public class MyActiveMQConfig {
 	    DefaultJmsListenerContainerFactory bean = new DefaultJmsListenerContainerFactory();
 	    //设置为发布订阅方式, 默认情况下使用的生产消费者方式
 	    bean.setPubSubDomain(true);
+	    bean.setSubscriptionDurable(true);//持久化配置
 	    bean.setConnectionFactory(connectionFactory);
+	    bean.setClientId("myclient");//客户端id，唯一
 	    return bean;
 	}
 	 
