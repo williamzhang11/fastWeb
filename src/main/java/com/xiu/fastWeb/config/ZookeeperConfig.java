@@ -17,9 +17,9 @@ import org.apache.zookeeper.Watcher.Event.KeeperState;
 import org.apache.zookeeper.ZooKeeper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-@Configuration
-@PropertySource("classpath:zookeeper.properties")
+//原生zookeeper配置
+//@Configuration
+//@PropertySource("classpath:zookeeper.properties")
 public class ZookeeperConfig {
 	
 	private static final Logger log = LoggerFactory.getLogger(ZookeeperConfig.class);
