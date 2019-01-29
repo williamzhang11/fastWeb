@@ -15,6 +15,7 @@ import org.springframework.jms.config.JmsListenerContainerFactory;
 import org.springframework.jms.core.JmsMessagingTemplate;
 
 //https://segmentfault.com/a/1190000011190467
+//https://www.cnblogs.com/gossip/p/5977489.html
 
 @Configuration 
 @PropertySource("classpath:activemq.properties")
