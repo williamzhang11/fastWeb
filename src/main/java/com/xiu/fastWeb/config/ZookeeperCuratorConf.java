@@ -9,8 +9,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 //基于curator的zookeeper配置
-@Configuration
-@PropertySource("classpath:zookeeper.properties")
+//@Configuration
+//@PropertySource("classpath:zookeeper.properties")
 public class ZookeeperCuratorConf {
 
 	@Value("${spring.zookeeper.address}")
