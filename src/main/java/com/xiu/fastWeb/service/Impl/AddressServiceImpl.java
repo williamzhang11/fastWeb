@@ -5,6 +5,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Service;
 
+import com.xiu.fastWeb.annotation.OperateLogAnnotation;
 import com.xiu.fastWeb.dao.AddressDao;
 import com.xiu.fastWeb.model.Address;
 import com.xiu.fastWeb.service.AddressService;
@@ -16,6 +17,7 @@ public class AddressServiceImpl implements AddressService{
 	AddressDao addressDao;
 
 	@Override
+	@OperateLogAnnotation(value= OperateLogAnnotation.Type.ADD)
 	public Address saveAddress(Address address) {
 
 		// TODO Auto-generated method stub
