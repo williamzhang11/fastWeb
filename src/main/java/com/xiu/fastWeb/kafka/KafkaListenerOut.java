@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class KafkaListenerOut {
 
-	@KafkaListener(topics = {"test"})
+	//@KafkaListener(topics = {"test"})
     public void listen(ConsumerRecord<?, ?> record) {
         System.err.println("kafka的key: " + record.key());
         System.err.println("kafka的value: " + record.value().toString());

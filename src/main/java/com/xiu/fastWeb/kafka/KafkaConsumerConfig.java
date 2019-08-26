@@ -16,8 +16,8 @@ import org.springframework.kafka.core.ConsumerFactory;
 import org.springframework.kafka.core.DefaultKafkaConsumerFactory;
 import org.springframework.kafka.listener.ConcurrentMessageListenerContainer;
 
-@Configuration
-@PropertySource("classpath:kafka.properties")
+//@Configuration
+//@PropertySource("classpath:kafka.properties")
 public class KafkaConsumerConfig {
 
 	@Value("${kafka.consumer.servers}")
